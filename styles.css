@@ -1,0 +1,29 @@
+.todo {
+    width: 300px;
+    min-height: 500px;
+    background: grey;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.todo .header {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo .body {
+    width: 100%;    
+}
+
+.todo .body .todo-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
