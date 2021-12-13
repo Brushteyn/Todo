@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #app {
     width: 100vw;
     height: 100vh;
@@ -37,8 +42,18 @@
     margin-bottom: 10px;
 }
 
+.todo .header input {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.todo .body .todo-item span {
+    width: 80%;
+}
+
 .todo .body .todo-item span.checked {
     text-decoration: line-through;
+    color: green;
 }
 
 .todo .footer .error {
