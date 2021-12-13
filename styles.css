@@ -18,7 +18,8 @@
 }
 
 .todo .body {
-    width: 100%;    
+    width: 100%;
+    margin-bottom: 20px; 
 }
 
 .todo .body .todo-item {
@@ -26,4 +27,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo .footer .error {
+    color: blue;
+    font-size: 20px;
 }
