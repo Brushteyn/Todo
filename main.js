@@ -1,11 +1,18 @@
 var app = new Vue({
     el: '#app',
     data: {
-        todo: ''
+        addTodoInput: '',
+        lists: []
     },
     methods: {
         addTodo() {
-            console.log('task add')
+            this.lists.push({
+                id: this.lists.length + 1,
+                title: this.addTodoInput,
+                isComplete: false
+            });
+
+            this.addTodoInput = '';
         }
     }
 })
