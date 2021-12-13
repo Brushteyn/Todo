@@ -30,6 +30,10 @@
     margin-bottom: 10px;
 }
 
+.todo .body .todo-item span.checked {
+    text-decoration: line-through;
+}
+
 .todo .footer .error {
     color: blue;
     font-size: 20px;
