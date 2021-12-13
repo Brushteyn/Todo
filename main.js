@@ -21,6 +21,9 @@ var app = new Vue({
             });
 
             this.addTodoInput = '';
+        },
+        deleteTodo(index){
+            this.$delete(this.lists, index)
         }
     }
 })

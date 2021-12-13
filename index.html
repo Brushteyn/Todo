@@ -16,10 +16,10 @@
                 <button @click="addTodo">Add</button>
             </div>            
             <div class="body" v-if="lists.length">
-                <div class="todo-item" v-for="list in lists" :key="list.id">
+                <div class="todo-item" v-for="list, index in lists" :key="list.id">
                     <input type="checkbox">
                     <span v-bind:class="{completed: list.isComplete}">{{list.title}}</span>
-                    <button>X</button>
+                    <button @click="deleteTodo(index)">X</button>
                 </div>
             </div>
             <div class="footer">
